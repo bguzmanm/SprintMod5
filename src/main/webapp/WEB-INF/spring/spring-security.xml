@@ -9,9 +9,9 @@
 
     <http auto-config="true">
         <intercept-url pattern="/" access="permitAll()"/>
-<!--        <intercept-url pattern="/films" access="hasAnyAuthority('ADMIN', 'USER')"/>
-        <intercept-url pattern="/users" access="permitAll()"/>-->
-
+        <!--<intercept-url pattern="/films" access="hasAnyAuthority('ADMIN', 'USER')"/>
+        <intercept-url pattern="/users" access="hasAnyAuthority('ADMIN', 'USER')" method="GET"/>
+        <intercept-url pattern="/users" access="hasAnyAuthority('ADMIN')" method="POST"/>-->
     </http>
 
     <authentication-manager>
